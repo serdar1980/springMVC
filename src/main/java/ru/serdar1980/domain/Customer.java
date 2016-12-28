@@ -41,6 +41,10 @@ public class Customer implements DomainObject{
 	@Getter @Setter
 	private String zipCode;
 	
+	@Version
+	@Getter @Setter
+	private Integer version;
+	
 	
 	public Customer buildSetFirstName(String firstName){
 		this.firstName = firstName;
@@ -77,5 +81,6 @@ public class Customer implements DomainObject{
 		this.state = state;
 		return this;
 	}
+	
 	
 }
